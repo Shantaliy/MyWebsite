@@ -59,7 +59,7 @@
 }
 
 @font-face {
-    font-family: "Gabriela-Regular", "Gabriela", serif;
+    font-family: "Gabriela";
     src: url(../file/font/Gabriela-Regular.ttf)
 }
 
@@ -122,8 +122,6 @@ section img {
 }
 
 section h1 {
-    max-width: 256px;
-    margin: 0 auto;
     padding-bottom: 8px;
     border-bottom: 2px solid rgb(255, 255, 255);
     margin-bottom: 8px;
