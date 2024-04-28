@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "Gabriela";
+    src: url(../file/font/Gabriela-Regular.ttf)
+}
+
+h1, p, a {
+    font-family: "Gabriela";
+    font-weight: bolder;
+    font-style: normal;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(66, 170, 255);
+    font-size: 16px;
+}
+
+body {
+    background: linear-gradient(45deg, rgb(255, 255, 255), rgb(66, 170, 255), rgb(255, 255, 255));
+    min-height: 100vh;
+    padding: 16px 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 64px;
+    align-content: center;
+}
+
+main {
+    justify-self: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    box-shadow: 0 0 16px rgb(0, 0, 0);
+    max-width: 512px;
+    width: 100%;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+section {
+    text-align: center;
+}
+
+section img {
+    width: 256px;
+    height: 256px;
+    border: 4px dashed rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+section h1 {
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    margin-bottom: 8px;
+}
+
+section p {
+    text-align: left;
+}
+
+section p + p {
+    margin-top: 16px;
+}
+
+nav {
+    margin-top: 8px;
+    border-top: 2px solid rgb(255, 255, 255);
+    padding-top: 8px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 4px;
+    justify-content: center;
+    align-content: center;
+}
+
+.tinkoff {
+    width: 256px;
+    height: 64px;
+    background-image: url(../file/link/tinkoff.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 16px;
+}
+
+footer {
+    justify-self: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    box-shadow: 0 0 16px rgb(0, 0, 0);
+    max-width: 720px;
+    width: 100%;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-content: center;
+    gap: 0 32px;
+}
+
+@media screen and (width <= 512px) {
+    footer {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-row-gap: 16px;
+    }
+}
+
+.github {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-image: url(../file/link/github.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.project {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-image: url(../file/link/symbol.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
